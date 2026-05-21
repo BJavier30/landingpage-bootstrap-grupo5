@@ -7,48 +7,122 @@
     <link rel="icon" href="mashkaboximg.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="header-inner">
-        <div class="logo">
-            <span class="logo-main">MASHKA BOX</span>
-            <span class="logo-sub">Training Club</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-warning border-opacity-25 py-3">
+        <div class="container-fluid px-5">
+
+            <a class="navbar-brand d-flex flex-column lh-1" href="#inicio">
+                <span class="fw-bold text-warning fs-4" style="font-family:'Bebas Neue',sans-serif; letter-spacing:2px;">MASHKA <span class="text-white">BOX</span></span>
+                <span class="text-white-50" style="font-size:11px; letter-spacing:3px;">Training Club</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-2 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#entrenamiento">Clases</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#planes">Planes</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning fw-bold text-dark px-4 py-2 fs-6 rounded-pill" href="#contacto">
+                            Inscríbete Gratis!
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-
-        <!-- BOTÓN HAMBURGUESA -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav id="mainNav">
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#video">Video</a>
-            <a href="#galeria">Galería</a>
-            <a href="#entrenamiento">Clases</a>
-            <a href="#productos">Productos</a>
-            <a href="#planes">Planes</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </div>
+    </nav>
 </header>
 
-<section id="inicio">
-    <div class="hero-content">
-        <div class="hero-img">
-            <img src="mashkaboximg.jpg" alt="Mashka Box">
-        </div>
-        <div class="hero-text">
-            <h1>MASHKA BOX</h1>
-            <p class="hero-sub">Training Club</p>
-            <p class="hero-tagline">No necesitas experiencia.<br>Solo ganas de empezar.</p>
-            <a href="#contacto" class="btn-primary">Inscríbete Gratis</a>
+<section id="inicio" class="bg-black min-vh-100 d-flex align-items-center pt-5 overflow-hidden">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+
+            <!-- Texto -->
+            <div class="col-12 col-lg-6 text-center text-lg-start order-2 order-lg-1">
+
+                <div class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start mb-4">
+                    <div class="bg-warning rounded-pill" style="width:40px; height:3px;"></div>
+                    <span class="text-warning text-uppercase fw-bold" style="letter-spacing:5px; font-size:0.75rem;">Ciudad Latacunga</span>
+                    <div class="bg-warning rounded-pill" style="width:40px; height:3px;"></div>
+                </div>
+
+                <h1 class="fw-black text-white lh-1 mb-0" style="font-size: clamp(4rem, 10vw, 7rem); font-family:'Bebas Neue',sans-serif; letter-spacing:4px;">
+                    MASHKA
+                </h1>
+                <h1 class="fw-black lh-1 mb-4" style="font-size: clamp(4rem, 10vw, 7rem); font-family:'Bebas Neue',sans-serif; letter-spacing:4px; -webkit-text-stroke: 2px #FFD700; color: transparent;">
+                    BOX
+                </h1>
+
+                <p class="text-white mb-1" style="font-size:1.15rem;">
+                    No necesitas experiencia.
+                </p>
+                <p class="fw-bold mb-4" style="font-size:1.15rem; color:#FFD700;">
+                    Solo ganas de empezar.
+                </p>
+
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-5">
+                    <a href="#contacto" class="btn btn-warning btn-lg fw-bold text-dark rounded-pill px-5 shadow">
+                        Primera clase Gratis.
+                    </a>
+                    <a href="#video" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                        Conoce sobre nosotros.
+                    </a>
+                </div>
+
+                <div class="row g-3 text-center">
+                    <div class="col-4">
+                        <div class="border border-warning border-opacity-25 rounded-3 py-3 px-2">
+                            <p class="text-warning fw-black mb-0" style="font-size:1.8rem;">5+</p>
+                            <p class="text-white-50 mb-0" style="font-size:0.7rem; letter-spacing:2px;">AÑOS</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border border-warning border-opacity-25 rounded-3 py-3 px-2">
+                            <p class="text-warning fw-black mb-0" style="font-size:1.8rem;">200+</p>
+                            <p class="text-white-50 mb-0" style="font-size:0.7rem; letter-spacing:2px;">ATLETAS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Imagen -->
+            <div class="col-12 col-lg-6 text-center order-1 order-lg-2 position-relative">
+
+                <div class="position-relative d-inline-block">
+                    <div class="rounded-circle bg-warning position-absolute opacity-10"
+                         style="width:420px; height:420px; top:50%; left:50%; transform:translate(-50%,-50%); max-width:90vw; max-height:90vw;">
+                    </div>
+                    <div class="rounded-circle bg-warning position-absolute opacity-25"
+                         style="width:320px; height:320px; top:50%; left:50%; transform:translate(-50%,-50%); max-width:70vw; max-height:70vw;">
+                    </div>
+
+                    <img src="images/mashkaboximg.jpg" alt="Mashka Box"
+                         class="img-fluid rounded-circle border border-warning border-3 shadow-lg position-relative"
+                         style="max-width:500px; z-index:2;">
+                    </span>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
@@ -290,5 +364,6 @@
         });
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
