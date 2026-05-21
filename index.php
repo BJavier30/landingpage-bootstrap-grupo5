@@ -113,39 +113,35 @@
     </div>
 </section>
 
-<section id="productos" class="py-5 bg-body-tertiary">
+<section id="productos" class="py-5 bg-dark">
     <div class="container">
-        <h2 class="display-6 fw-bold text-center mb-4">Productos</h2>
+        <h2 class="display-6 fw-bold text-center mb-4 text-warning">Productos</h2>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card h-100">
-                    <div class="card-header fw-bold">🥊 Producto destacado</div>
+                <div class="card h-100 bg-black border-warning">
+                    <div class="card-header bg-warning text-dark fw-bold">🥊 Producto destacado</div>
                     <div class="card-body">
-                        <h5 class="card-title">Guantes</h5>
-                        <p class="card-text">Guantes ideales para entrenamiento funcional y boxeo.</p>
-                        <p class="h4 text-success">$15</p>
-                        <a href="https://wa.me/593000000000" class="btn btn-success">Consultar WhatsApp</a>
+                        <h5 class="card-title text-white">Guantes</h5>
+                        <p class="card-text text-white-50">Guantes ideales para entrenamiento funcional y boxeo.</p>
+                        <p class="h4 text-warning">$15</p>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card h-100">
-                    <div class="card-header fw-bold">💪 Suplemento</div>
+                <div class="card h-100 bg-black border-warning">
+                    <div class="card-header bg-warning text-dark fw-bold">💪 Suplemento</div>
                     <div class="card-body">
-                        <h5 class="card-title">Proteína</h5>
-                        <p class="card-text">Suplemento para apoyar tu recuperación y rendimiento.</p>
-                        <p class="h4 text-success">$40</p>
-                        <a href="https://wa.me/593000000000" class="btn btn-success">Consultar WhatsApp</a>
+                        <h5 class="card-title text-white">Proteína</h5>
+                        <p class="card-text text-white-50">Suplemento para apoyar tu recuperación y rendimiento.</p>
+                        <p class="h4 text-warning">$40</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-</section>
-
 <section id="planes" class="py-5 bg-dark">
     <div class="container">
         <h2 class="display-5 fw-bold text-center mb-5 text-warning">
@@ -155,7 +151,7 @@
         <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
 
             <div class="col">
-                <div class="card h-100 shadow-lg text-center bg-dark border-warning">
+                <div class="card h-100 shadow-lg text-center bg-black border-warning">
 
                     <div class="card-header bg-warning text-dark fw-bold">
                         Plan Grupal
@@ -231,39 +227,39 @@
         </div>
     </div>
 </section>
-
-
-<section id="horarios">
+<section id="horarios" class="bg-dark">
     <div class="section-inner centered">
-        <h2 class="section-title">Horarios</h2>
-        <div class="tabla-box">
-            <table>
-                <thead>
-                    <tr class="tabla-header">
-                        <th>Turno</th>
-                        <th>Hora 1</th>
-                        <th>Hora 2</th>
-                        <th>Hora 3</th>
-                        <th>Hora 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>🌅 Mañana</th>
-                        <td>5:00</td>
-                        <td>6:00</td>
-                        <td>7:00</td>
-                        <td>8:00</td>
-                    </tr>
-                    <tr>
-                        <th>🌆 Tarde/Noche</th>
-                        <td>16:00</td>
-                        <td>17:00</td>
-                        <td>18:00</td>
-                        <td>19:00</td>
-                    </tr>
-                </tbody>
-            </table>
+       <h2 class="section-title text-warning fs-1">Horarios</h2>
+        <div class="container py-5 text-center">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover table-dark align-middle text-center">
+                    <thead class="table-warning">
+                        <tr>
+                            <th scope="col">Turno</th>
+                            <th scope="col">Hora 1</th>
+                            <th scope="col">Hora 2</th>
+                            <th scope="col">Hora 3</th>
+                            <th scope="col">Hora 4</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">🌅 Mañana</th>
+                            <td>5:00</td>
+                            <td>6:00</td>
+                            <td>7:00</td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🌆 Tarde/Noche</th>
+                            <td>16:00</td>
+                            <td>17:00</td>
+                            <td>18:00</td>
+                            <td>19:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </section>
