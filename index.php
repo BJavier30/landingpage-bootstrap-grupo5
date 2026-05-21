@@ -14,12 +14,12 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-warning border-opacity-25 py-3">
+        <div class="container-fluid px-5">
 
             <a class="navbar-brand d-flex flex-column lh-1" href="#inicio">
-                <span class="fw-bold text-warning" style="font-family:'Bebas Neue',sans-serif; font-size:1.4rem; letter-spacing:2px;">MASHKA BOX</span>
-                <span class="text-white-50" style="font-size:10px; letter-spacing:3px;">Training Club</span>
+                <span class="fw-bold text-warning fs-4" style="font-family:'Bebas Neue',sans-serif; letter-spacing:2px;">MASHKA <span class="text-white">BOX</span></span>
+                <span class="text-white-50" style="font-size:11px; letter-spacing:3px;">Training Club</span>
             </a>
 
             <button class="navbar-toggler border-0" type="button"
@@ -32,16 +32,18 @@
             </button>
 
             <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav ms-auto gap-1">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#entrenamiento">Clases</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-warning btn-sm text-dark fw-bold px-3 ms-2" href="#contacto">Inscríbete</a>
+                <ul class="navbar-nav ms-auto gap-2 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#entrenamiento">Clases</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-info fw-semibold fs-6 px-3" href="#planes">Planes</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning fw-bold text-dark px-4 py-2 fs-6 rounded-pill" href="#contacto">
+                            Inscríbete Gratis!
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -79,10 +81,10 @@
 
                 <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-5">
                     <a href="#contacto" class="btn btn-warning btn-lg fw-bold text-dark rounded-pill px-5 shadow">
-                        Inscríbete Gratis!
+                        Primera clase Gratis.
                     </a>
                     <a href="#video" class="btn btn-outline-light btn-lg rounded-pill px-4">
-                         Descúbrenos.
+                        Conoce sobre nosotros.
                     </a>
                 </div>
 
