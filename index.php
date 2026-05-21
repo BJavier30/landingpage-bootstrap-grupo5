@@ -5,39 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MASHKA BOX - Training Club</title>
     <link rel="icon" href="mashkaboximg.jpg" type="image/jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-        }
-        .form-control {
-            background-color: #000000 !important;
-            color: #ffffff !important;
-            border-color: #ffc107 !important;
-        }
-        .form-control::placeholder {
-            color: #aaaaaa !important;
-        }
-        .form-control:focus {
-            background-color: #000000 !important;
-            color: #ffffff !important;
-            box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3) !important;
-        }
-        section {
-            background-color: #000000;
-        }
-        footer {
-            background-color: #000000 !important;
-        }
-        footer img {
-            width: 28px !important;
-            height: 28px !important;
-        }
-    </style>
 </head>
 
 <body>
