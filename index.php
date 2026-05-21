@@ -8,6 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .form-control {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+            border-color: #ffc107 !important;
+        }
+        .form-control::placeholder {
+            color: #aaaaaa !important;
+        }
+        .form-control:focus {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+            box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3) !important;
+        }
+        section {
+            background-color: #000000;
+        }
+        footer {
+            background-color: #000000 !important;
+        }
+        footer img {
+            width: 28px !important;
+            height: 28px !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,14 +48,11 @@
             <span class="logo-main">MASHKA BOX</span>
             <span class="logo-sub">Training Club</span>
         </div>
-
-        <!-- BOTÓN HAMBURGUESA -->
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
             <span></span>
             <span></span>
             <span></span>
         </button>
-
         <nav id="mainNav">
             <a href="#inicio">Inicio</a>
             <a href="#nosotros">Nosotros</a>
@@ -148,34 +175,34 @@
     </div>
 </section>
 
-<section id="horarios">
-    <div class="section-inner centered">
-        <h2 class="section-title">Horarios</h2>
-        <div class="tabla-box">
-            <table>
+<section id="horarios" class="py-5">
+    <div class="container text-center">
+        <h2 class="section-title text-warning mb-4">Horarios</h2>
+        <div class="table-responsive d-flex justify-content-center">
+            <table class="table table-dark table-hover table-bordered text-center align-middle" style="max-width: 650px;">
                 <thead>
-                    <tr class="tabla-header">
+                    <tr class="table-warning text-dark">
                         <th>Turno</th>
-                        <th>Hora 1</th>
-                        <th>Hora 2</th>
-                        <th>Hora 3</th>
-                        <th>Hora 4</th>
+                        <th>Lunes</th>
+                        <th>Miércoles</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>🌅 Mañana</th>
-                        <td>5:00</td>
-                        <td>6:00</td>
-                        <td>7:00</td>
-                        <td>8:00</td>
+                        <th class="table-warning text-dark">🌅 Mañana</th>
+                        <td>6:00 AM</td>
+                        <td>7:00 AM</td>
+                        <td>8:00 AM</td>
+                        <td>9:00 AM</td>
                     </tr>
                     <tr>
-                        <th>🌆 Tarde/Noche</th>
-                        <td>16:00</td>
-                        <td>17:00</td>
-                        <td>18:00</td>
-                        <td>19:00</td>
+                        <th class="table-warning text-dark">🌆 Tarde</th>
+                        <td>4:00 PM</td>
+                        <td>5:00 PM</td>
+                        <td>6:00 PM</td>
+                        <td>7:00 PM</td>
                     </tr>
                 </tbody>
             </table>
@@ -183,106 +210,91 @@
     </div>
 </section>
 
-<?php
-                // Conexión a la base de datos
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "mashkabox";
-                $conn = new mysqli($servername, $username, $password, $dbname);
-                if ($conn->connect_error) {
-                    die("Conexión fallida: " . $conn->connect_error);
-                }
-?>
-<section id="contacto">
-    <div class="section-inner centered">
-        <h2 class="section-title">Contáctanos</h2>
-        <div class="form-box">
-            <?php
+<section id="contacto" class="py-5">
+    <div class="container">
+        <div class="row gap-4 justify-content-center">
+
+            <!-- FORMULARIO IZQUIERDA -->
+            <div class="col-md-5">
+                <h2 class="section-title text-warning text-center mb-4">Contáctanos</h2>
+                <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $conn = new mysqli("localhost", "root", "", "mashkabox");
-
                     $nombre   = $_POST['nombre']   ?? '';
                     $correo   = $_POST['correo']   ?? '';
                     $telefono = $_POST['telefono'] ?? '';
                     $mensaje  = $_POST['mensaje']  ?? '';
-
                     $sql = "INSERT INTO clientes (cli_name, cli_email, cli_phone, cli_message)
                             VALUES ('$nombre', '$correo', '$telefono', '$mensaje')";
-
                     if ($conn->query($sql) === TRUE) {
-                        echo "<p id='msg-ok' style='color:green'>✅ Mensaje enviado correctamente</p>
-                        <script>
-                            setTimeout(() => {
-                                document.getElementById('msg-ok').style.display = 'none';
-                            }, 3000);
-                            window.location.hash = '#contacto';
-                        </script>";
+                        echo "<div class='alert alert-success'>✅ Mensaje enviado correctamente</div>";
                     } else {
-                        echo "<p style='color:red'>❌ Error: " . $conn->error . "</p>";
+                        echo "<div class='alert alert-danger'>❌ Error: " . $conn->error . "</div>";
                     }
-
                     $conn->close();
                 }
                 ?>
+                <form class="p-4 bg-dark rounded border border-warning" method="POST" action="">
+                    <div class="mb-3">
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="correo" class="form-control" placeholder="Correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="telefono" class="form-control" placeholder="Teléfono" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="mensaje" class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <button class="btn btn-warning w-100 fw-bold" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
 
-            <form class="form-centro" method="POST" action="">
-                <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="email" name="correo" placeholder="Correo" required>
-                <input type="text" name="telefono" placeholder="Teléfono" required>
-                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                <button class="btn-primary full" type="submit">Enviar mensaje</button>
-            </form>
+            <!-- MAPA DERECHA -->
+            <div class="col-md-5">
+                <h2 class="section-title text-warning text-center mb-4">Ubicación</h2>
+                <div class="ratio ratio-16x9" style="border: 4px solid #ffc107; border-radius: 12px; overflow: hidden;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d498.6593947852148!2d-78.6110841!3d-0.9454329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1ses!2sec!4v1776268327012!5m2!1ses!2sec"
+                        allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+                <p class="text-secondary mb-0">© 2026 MASHKA BOX Training Club — 📍 Latacunga - Ecuador</p>
+                <p class="text-secondary mb-0">📞 +593 99 999 9999 &nbsp;|&nbsp; ✉️ info@mashkabox.com</p>
+            </div>
+
         </div>
     </div>
 </section>
 
-<section id="ubicacion">
-    <div class="section-inner">
-        <h2 class="section-title">Ubicación</h2>
-        <div class="mapa-box">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d498.6593947852148!2d-78.6110841!3d-0.9454329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1ses!2sec!4v1776268327012!5m2!1ses!2sec"
-                allowfullscreen loading="lazy">
-            </iframe>
-        </div>
-        <p class="ubicacion-txt">📍 Latacunga, Ecuador</p>
-    </div>
-</section>
-
-<section id="redes">
-    <div class="section-inner centered">
-        <h2 class="section-title amarillo">Síguenos</h2>
-        <div class="redes-row">
-            <a href="#" class="redes-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+<footer class="py-4 border-top border-warning text-center">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-center gap-4 mb-3">
+            <a href="#" class="text-warning text-decoration-none d-flex align-items-center gap-2">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="28" height="28">
                 <span>Facebook @mashkabox</span>
             </a>
-            <a href="#" class="redes-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            <a href="#" class="text-warning text-decoration-none d-flex align-items-center gap-2">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="28" height="28">
                 <span>Instagram @mashkabox</span>
             </a>
-            <a href="#" class="redes-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            <a href="#" class="text-warning text-decoration-none d-flex align-items-center gap-2">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="28" height="28">
                 <span>WhatsApp</span>
             </a>
         </div>
+        <p class="text-secondary mb-0">© 2026 MASHKA BOX Training Club — Latacunga, Ecuador</p>
     </div>
-</section>
-
-<footer>
-    <p>© 2026 MASHKA BOX Training Club — Latacunga, Ecuador</p>
 </footer>
+
 <script>
     const toggle = document.getElementById('menuToggle');
     const nav = document.getElementById('mainNav');
-
     toggle.addEventListener('click', () => {
         nav.classList.toggle('open');
         toggle.classList.toggle('active');
     });
-
-    // Cierra el menú al hacer clic en un enlace
     nav.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('open');
@@ -290,5 +302,6 @@
         });
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
