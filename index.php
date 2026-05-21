@@ -50,16 +50,77 @@
     </nav>
 </header>
 
-<section id="inicio">
-    <div class="hero-content">
-        <div class="hero-img">
-            <img src="mashkaboximg.jpg" alt="Mashka Box">
-        </div>
-        <div class="hero-text">
-            <h1>MASHKA BOX</h1>
-            <p class="hero-sub">Training Club</p>
-            <p class="hero-tagline">No necesitas experiencia.<br>Solo ganas de empezar.</p>
-            <a href="#contacto" class="btn-primary">Inscríbete Gratis</a>
+<section id="inicio" class="bg-black min-vh-100 d-flex align-items-center pt-5 overflow-hidden">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+
+            <!-- Texto -->
+            <div class="col-12 col-lg-6 text-center text-lg-start order-2 order-lg-1">
+
+                <div class="d-flex align-items-center gap-2 justify-content-center justify-content-lg-start mb-4">
+                    <div class="bg-warning rounded-pill" style="width:40px; height:3px;"></div>
+                    <span class="text-warning text-uppercase fw-bold" style="letter-spacing:5px; font-size:0.75rem;">Ciudad Latacunga</span>
+                    <div class="bg-warning rounded-pill" style="width:40px; height:3px;"></div>
+                </div>
+
+                <h1 class="fw-black text-white lh-1 mb-0" style="font-size: clamp(4rem, 10vw, 7rem); font-family:'Bebas Neue',sans-serif; letter-spacing:4px;">
+                    MASHKA
+                </h1>
+                <h1 class="fw-black lh-1 mb-4" style="font-size: clamp(4rem, 10vw, 7rem); font-family:'Bebas Neue',sans-serif; letter-spacing:4px; -webkit-text-stroke: 2px #FFD700; color: transparent;">
+                    BOX
+                </h1>
+
+                <p class="text-white mb-1" style="font-size:1.15rem;">
+                    No necesitas experiencia.
+                </p>
+                <p class="fw-bold mb-4" style="font-size:1.15rem; color:#FFD700;">
+                    Solo ganas de empezar.
+                </p>
+
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-5">
+                    <a href="#contacto" class="btn btn-warning btn-lg fw-bold text-dark rounded-pill px-5 shadow">
+                        Inscríbete Gratis!
+                    </a>
+                    <a href="#video" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                         Descúbrenos.
+                    </a>
+                </div>
+
+                <div class="row g-3 text-center">
+                    <div class="col-4">
+                        <div class="border border-warning border-opacity-25 rounded-3 py-3 px-2">
+                            <p class="text-warning fw-black mb-0" style="font-size:1.8rem;">5+</p>
+                            <p class="text-white-50 mb-0" style="font-size:0.7rem; letter-spacing:2px;">AÑOS</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border border-warning border-opacity-25 rounded-3 py-3 px-2">
+                            <p class="text-warning fw-black mb-0" style="font-size:1.8rem;">200+</p>
+                            <p class="text-white-50 mb-0" style="font-size:0.7rem; letter-spacing:2px;">ATLETAS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Imagen -->
+            <div class="col-12 col-lg-6 text-center order-1 order-lg-2 position-relative">
+
+                <div class="position-relative d-inline-block">
+                    <div class="rounded-circle bg-warning position-absolute opacity-10"
+                         style="width:420px; height:420px; top:50%; left:50%; transform:translate(-50%,-50%); max-width:90vw; max-height:90vw;">
+                    </div>
+                    <div class="rounded-circle bg-warning position-absolute opacity-25"
+                         style="width:320px; height:320px; top:50%; left:50%; transform:translate(-50%,-50%); max-width:70vw; max-height:70vw;">
+                    </div>
+
+                    <img src="images/mashkaboximg.jpg" alt="Mashka Box"
+                         class="img-fluid rounded-circle border border-warning border-3 shadow-lg position-relative"
+                         style="max-width:500px; z-index:2;">
+                    </span>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
