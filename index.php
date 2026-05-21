@@ -7,8 +7,9 @@
     <link rel="icon" href="mashkaboximg.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
 </head>
 
 <body>
@@ -112,38 +113,118 @@
     </div>
 </section>
 
-<section id="productos" class="py-5 bg-light">
+<section id="productos" class="py-5 bg-body-tertiary">
     <div class="container">
-        
-        <h2 class="text-center mb-5">Productos</h2>
+        <h2 class="display-6 fw-bold text-center mb-4">Productos</h2>
 
-        <div class="row g-4">
-
-            <div class="col-md-6">
-                <div class="card shadow h-100 text-center">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header fw-bold">🥊 Producto destacado</div>
                     <div class="card-body">
-                        <h3 class="card-title">🥊 Guantes</h3>
-                        <p class="fs-4 fw-bold text-success">$15</p>
-
-                        <a href="https://wa.me/593000000000"
-                           class="btn btn-success">
-                           Consultar WhatsApp
-                        </a>
+                        <h5 class="card-title">Guantes</h5>
+                        <p class="card-text">Guantes ideales para entrenamiento funcional y boxeo.</p>
+                        <p class="h4 text-success">$15</p>
+                        <a href="https://wa.me/593000000000" class="btn btn-success">Consultar WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card shadow h-100 text-center">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header fw-bold">💪 Suplemento</div>
                     <div class="card-body">
-                        <h3 class="card-title">💪 Proteína</h3>
-                        <p class="fs-4 fw-bold text-success">$40</p>
-
-                        <a href="https://wa.me/593000000000"
-                           class="btn btn-success">
-                           Consultar WhatsApp
-                        </a>
+                        <h5 class="card-title">Proteína</h5>
+                        <p class="card-text">Suplemento para apoyar tu recuperación y rendimiento.</p>
+                        <p class="h4 text-success">$40</p>
+                        <a href="https://wa.me/593000000000" class="btn btn-success">Consultar WhatsApp</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<section id="planes" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="display-5 fw-bold text-center mb-5 text-warning">
+            Planes de Entrenamiento
+        </h2>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+
+            <div class="col">
+                <div class="card h-100 shadow-lg text-center bg-dark border-warning">
+
+                    <div class="card-header bg-warning text-dark fw-bold">
+                        Plan Grupal
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-white">
+                            Entrena con amigos
+                        </h5>
+
+                        <p class="card-text text-white-50">
+                            Ideal para quienes buscan motivación y entrenamiento en equipo.
+                        </p>
+
+                        <p class="display-4 fw-bold text-warning">
+                            $30
+                        </p>
+
+                        <p class="text-white-50">
+                            por mes
+                        </p>
+
+                        <a href="#contacto" class="btn btn-outline-warning btn-lg">
+                            Inscribirme
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-lg text-center bg-black border-warning border-2">
+
+                    <div class="card-header bg-warning text-dark fw-bold">
+
+                        Plan Mensual
+
+                        <span class="badge bg-dark text-warning ms-2">
+                            Popular
+                        </span>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title text-white">
+                            Entrenamiento completo
+                        </h5>
+
+                        <p class="card-text text-white-50">
+                            Acceso completo a clases y entrenamiento funcional.
+                        </p>
+
+                        <p class="display-4 fw-bold text-warning">
+                            $35
+                        </p>
+
+                        <p class="text-white-50">
+                            por mes
+                        </p>
+
+                        <a href="#contacto" class="btn btn-warning btn-lg text-dark fw-bold">
+                            Inscribirme
+                        </a>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -151,24 +232,6 @@
     </div>
 </section>
 
-<section id="planes">
-    <div class="section-inner">
-        <h2 class="section-title">Planes</h2>
-        <div class="cards-row">
-            <div class="plan-card">
-                <h3>Plan Grupal</h3>
-                <p class="plan-precio">$30<span>/mes</span></p>
-                <a href="#contacto" class="btn-primary small">Inscribirme</a>
-            </div>
-            <div class="plan-card destacado">
-                <span class="badge">Popular</span>
-                <h3>Plan Mensual</h3>
-                <p class="plan-precio">$35<span>/mes</span></p>
-                <a href="#contacto" class="btn-dark small">Inscribirme</a>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section id="horarios">
     <div class="section-inner centered">
