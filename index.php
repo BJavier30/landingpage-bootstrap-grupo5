@@ -177,7 +177,7 @@
 
 <section id="horarios" class="py-5">
     <div class="container text-center">
-        <h2 class="section-title text-warning mb-4">Horarios</h2>
+        <h2 class="section-title text-warning mb-4">🕐 Horarios de Clases</h2>
         <div class="table-responsive d-flex justify-content-center">
             <table class="table table-dark table-hover table-bordered text-center align-middle" style="max-width: 650px;">
                 <thead>
