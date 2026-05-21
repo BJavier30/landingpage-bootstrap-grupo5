@@ -7,36 +7,47 @@
     <link rel="icon" href="mashkaboximg.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="header-inner">
-        <div class="logo">
-            <span class="logo-main">MASHKA BOX</span>
-            <span class="logo-sub">Training Club</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid px-4">
+
+            <a class="navbar-brand d-flex flex-column lh-1" href="#inicio">
+                <span class="fw-bold text-warning" style="font-family:'Bebas Neue',sans-serif; font-size:1.4rem; letter-spacing:2px;">MASHKA BOX</span>
+                <span class="text-white-50" style="font-size:10px; letter-spacing:3px;">Training Club</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#entrenamiento">Clases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-warning btn-sm text-dark fw-bold px-3 ms-2" href="#contacto">Inscríbete</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-
-        <!-- BOTÓN HAMBURGUESA -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav id="mainNav">
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#video">Video</a>
-            <a href="#galeria">Galería</a>
-            <a href="#entrenamiento">Clases</a>
-            <a href="#productos">Productos</a>
-            <a href="#planes">Planes</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </div>
+    </nav>
 </header>
 
 <section id="inicio">
@@ -290,5 +301,6 @@
         });
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
