@@ -247,7 +247,7 @@
                     <div class="mb-3">
                         <textarea name="mensaje" class="form-control" rows="5" placeholder="Mensaje" required></textarea>
                     </div>
-                    <button class="btn btn-warning w-100 fw-bold" type="submit">Enviar mensaje</button>
+                    <button class="btn btn-warning w-100 fw-bold" type="submit">📩 Enviar mensaje</button>
                 </form>
             </div>
 
