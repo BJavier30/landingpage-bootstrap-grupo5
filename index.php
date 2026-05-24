@@ -127,64 +127,6 @@
     </div>
 </section>
 
-<section id="nosotros">
-    <div class="section-inner">
-        <h2 class="section-title">Sobre Nosotros</h2>
-        <p>Somos un centro de entrenamiento enfocado en mejorar tu rendimiento físico, salud y disciplina mediante entrenamientos funcionales.</p>
-        <div class="cards-row">
-            <div class="card">
-                <span class="card-icon">🎯</span>
-                <h3>Misión</h3>
-                <p>Mejorar la calidad de vida de cada persona a través del entrenamiento.</p>
-            </div>
-            <div class="card">
-                <span class="card-icon">🏆</span>
-                <h3>Visión</h3>
-                <p>Ser líderes en entrenamiento funcional en la región.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="video">
-    <div class="section-inner centered">
-        <h2 class="section-title">Conoce nuestro entrenamiento</h2>
-        <div class="video-box">
-            <blockquote class="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/reel/DV_ohLWjizm/"
-                data-instgrm-version="14">
-            </blockquote>
-        </div>
-        <script async src="//www.instagram.com/embed.js"></script>
-    </div>
-</section>
-
-<section id="galeria">
-    <div class="section-inner">
-        <h2 class="section-title">Galería</h2>
-        <h3 class="sub-title">Instalaciones</h3>
-        <div class="gallery-grid">
-            <img src="12.jpg" alt="Instalación 1">
-            <img src="2.jpg" alt="Instalación 2">
-            <img src="3.jpg" alt="Instalación 3">
-            <img src="5.jpg" alt="Instalación 4">
-        </div>
-    </div>
-</section>
-
-<section id="entrenamiento">
-    <div class="section-inner">
-        <h2 class="section-title">Clases</h2>
-        <div class="gallery-grid six">
-            <img src="4.jpg" alt="Clase">
-            <img src="6.jpg" alt="Clase">
-            <img src="7.jpg" alt="Clase">
-            <img src="8.jpg" alt="Clase">
-            <img src="9.jpg" alt="Clase">
-        </div>
-    </div>
-</section>
-
 <section id="productos">
     <div class="section-inner">
         <h2 class="section-title">Productos</h2>
